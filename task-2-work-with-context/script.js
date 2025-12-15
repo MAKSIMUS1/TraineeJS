@@ -27,7 +27,7 @@ function showName() {
   console.log(this.name);
 }
 
-// 1
+// 1 
 setTimeout(() => {
     showName.call(voltron);
 }, 1);
