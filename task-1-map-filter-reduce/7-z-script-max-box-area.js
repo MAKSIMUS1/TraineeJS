@@ -26,7 +26,7 @@ console.log(
     area: box.height * box.width,
     url: box.url
   }))
-  .reduce(function(prev, curr) {
+  .reduce((prev, curr) => {
     return (prev.width * prev.height) > (curr.width * curr.height) ? prev : curr;
   })
 );

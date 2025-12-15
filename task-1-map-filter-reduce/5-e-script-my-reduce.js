@@ -11,5 +11,5 @@ Array.prototype.reduce = function (combiner, initialValue) {
     return acc;
 };
 
-console.log( [1,2,3].reduce(function(memo, item) { return memo + item; }) ); // === 6
-console.log( [1,2,3].reduce(function(memo, item) { return memo + item; }, 10) ); //=== 16
+console.log( [1,2,3].reduce((memo, item) => { return memo + item; }) ); // === 6
+console.log( [1,2,3].reduce((memo, item) => { return memo + item; }, 10) ); //=== 16

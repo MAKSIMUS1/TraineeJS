@@ -18,7 +18,7 @@ const videos = [
 ];
 
 console.log(
-    videos.reduce(function(prev, curr) {
+    videos.reduce((prev, curr) => {
       return {...prev, [curr.id]: curr.title};
   }, {})
 );

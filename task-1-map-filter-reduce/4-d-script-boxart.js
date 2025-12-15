@@ -93,5 +93,5 @@ const movieLists = [
 ];
 
 let tempResult = movieLists.map((v) => v.videos);
-let result = tempResult[0].concat(tempResult[1]).map((v) => ({id: v.id, title: v.title, boxart: v.boxarts.filter(function(b) { return b.width === 150 && b.height === 200}).map(box => box.url)[0]}));
+let result = tempResult[0].concat(tempResult[1]).map((v) => ({id: v.id, title: v.title, boxart: v.boxarts.filter((b) =>{ return b.width === 150 && b.height === 200}).map(box => box.url)[0]}));
 console.log(result);
