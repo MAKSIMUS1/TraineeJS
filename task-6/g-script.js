@@ -8,7 +8,7 @@ let data = [
 	{ country: 'country3', city: 'city31' },
 ];
 
-const result = data.reduce(function (accumulator, currentValue) {
+const result = data.reduce((accumulator, currentValue) => {
     if(!accumulator[currentValue.country]) {
         accumulator[currentValue.country] = [];
     }
