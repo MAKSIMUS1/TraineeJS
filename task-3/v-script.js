@@ -15,7 +15,7 @@ function startRandomTimer() {
     }, randomSeconds);
 }
 
-document.getElementById('btnRandomSeconds').addEventListener('click', function() {
+document.getElementById('btnRandomSeconds').addEventListener('click', () => {
     if(!isRandomSecondsTimerStarted)
     {
         isRandomSecondsTimerStarted = true;
