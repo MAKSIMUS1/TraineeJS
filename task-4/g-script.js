@@ -1,7 +1,7 @@
 function asyncTask(num) {
     const delay = Math.floor(Math.random() * 10 + 1) * 1000;
 
-    return new Promise(function (resolve, reject) {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log(`Func #${num}, time: ${delay}`);
             resolve(delay)

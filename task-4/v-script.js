@@ -1,4 +1,4 @@
-new Promise(function (resolve, reject) {
+new Promise((resolve, reject) => {
     const delay = Math.floor(Math.random() * 4000);
 
     setTimeout(() => {

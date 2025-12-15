@@ -1,4 +1,4 @@
-new Promise(function (resolve, reject) {
+new Promise((resolve, reject) => {
     setTimeout(() => resolve(10), 3000);
 })
   .then(result => {
@@ -7,7 +7,7 @@ new Promise(function (resolve, reject) {
   })
   .then(result => {
     console.log(result);
-    return new Promise(function (resolve, reject){
+    return new Promise((resolve, reject) => {
       setTimeout(() => resolve(result+2), 2000);
     });
   })
