@@ -1,6 +1,6 @@
 const table = document.getElementById('table');
 
-table.addEventListener('click', function(event) {
+table.addEventListener('click', (event) => {
     const cell = event.target;
 
     if(cell.tagName !== 'TD') return;
