@@ -29,7 +29,7 @@ const newReleases = [{
 }];
 
 function isRating5(value) {
-  return value.rating == 5.0;
+  return value.rating === 5.0;
 }
 
 const result = newReleases.filter(isRating5).map((v) => (v.id));
